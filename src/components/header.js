@@ -14,17 +14,27 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  appBar: (props) => ({
+    width: `calc(100% - ${props.drawerWidth}px)`,
+    marginTop: theme.spacing(3),
+    marginLeft: props.drawerWidth,
+    paddingLeft: theme.spacing(3),
+  })
 }))
 
 const myNotionPage =
   "https://www.notion.so/Reading-List-eb63538ed9064b3fac7e1e5d620ab92e"
 
-export default function Header() {
-  const classes = useStyles();
+export default function Header(props) {
+  const classes = useStyles(props);
+
   return (
-    <AppBar color={"white"} elevation={0} position={"static"}>
+    <AppBar color={"white"}
+            elevation={0}
+            className={classes.appBar}
+            position={"static"}>
       <Toolbar>
-        <Typography variant={"h5"} className={classes.title}>
+        <Typography variant={"h4"} className={classes.title}>
           Genne
         </Typography>
         <IconButton color={"inherit"} href={"/"}>
