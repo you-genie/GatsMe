@@ -11,6 +11,7 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 import PersonIcon from "@material-ui/icons/Person"
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks"
 import CodeIcon from "@material-ui/icons/Code"
+import Profile from './profile'
 
 const useStyles = makeStyles((theme) => ({
   drawer: (props) => ({
@@ -51,6 +52,7 @@ export default function MyDrawer(props) {
       classes={{ paper: classes.drawerPaper }}
       anchor={"left"}>
       <div className={classes.filler} />
+      <Profile />
       <List>
         <MenuListItem
           primary={'About Me'}

@@ -34,8 +34,8 @@ export default function Header(props) {
             className={classes.appBar}
             position={"static"}>
       <Toolbar>
-        <Typography variant={"h4"} className={classes.title}>
-          Genne
+        <Typography variant={"h5"} className={classes.title}>
+          GENNE
         </Typography>
         <IconButton color={"inherit"} href={"/"}>
           <HomeIcon />
