@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: (props) => ({
     width: `calc(100% - ${props.drawerWidth}px)`,
-    marginTop: theme.spacing(3),
+    height: theme.mixins.toolbar.minHeight + theme.spacing(4),
+    paddingTop: theme.spacing(3),
     marginLeft: props.drawerWidth,
     paddingLeft: theme.spacing(3),
   })

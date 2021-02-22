@@ -8,7 +8,6 @@ import ListItemText from '@material-ui/core/ListItemText'
 import ListSubheader from '@material-ui/core/ListSubheader'
 import Avatar from '@material-ui/core/Avatar'
 import GitHubIcon from "@material-ui/icons/GitHub"
-import PersonIcon from "@material-ui/icons/Person"
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks"
 import CodeIcon from "@material-ui/icons/Code"
 import Profile from './profile'
@@ -24,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   filler: {
     width: '100%',
     height: theme.spacing(12),
+  },
+  links: {
+    marginTop: theme.spacing(4),
   }
 }));
 
@@ -53,12 +55,7 @@ export default function MyDrawer(props) {
       anchor={"left"}>
       <div className={classes.filler} />
       <Profile />
-      <List>
-        <MenuListItem
-          primary={'About Me'}
-          url={'/'}
-          secondary={''}
-          icon={<PersonIcon />}/>
+      <List className={classes.links}>
         <ListSubheader>links</ListSubheader>
         <MenuListItem
           primary={'Github Site'}

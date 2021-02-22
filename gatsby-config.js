@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Genne's Blog",
+    author: "Genne Chung",
+    description: "Blog on readings & bio",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,6 +26,7 @@ module.exports = {
       options: {
         pathToConfigModule: '',
       }
-    }
+    },
+    'gatsby-theme-material-ui',
   ],
 }
