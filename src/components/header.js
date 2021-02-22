@@ -14,9 +14,6 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  appBar: {
-
-  },
 }))
 
 const myNotionPage =
@@ -25,7 +22,7 @@ const myNotionPage =
 export default function Header() {
   const classes = useStyles();
   return (
-    <AppBar position={"static"}>
+    <AppBar color={"white"} elevation={0} position={"static"}>
       <Toolbar>
         <Typography variant={"h5"} className={classes.title}>
           Genne
