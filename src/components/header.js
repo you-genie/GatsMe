@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
 
   },
 }))
+
+const myNotionPage =
+  "https://www.notion.so/Reading-List-eb63538ed9064b3fac7e1e5d620ab92e"
+
 export default function Header() {
   const classes = useStyles();
   return (
@@ -26,19 +30,19 @@ export default function Header() {
         <Typography variant={"h5"} className={classes.title}>
           Genne
         </Typography>
-        <IconButton color={"inherit"}>
+        <IconButton color={"inherit"} href={"/"}>
           <HomeIcon />
         </IconButton>
-        <IconButton color={"inherit"}>
+        <IconButton color={"inherit"} href={"https://github.com/you-genie"}>
           <GitHubIcon />
         </IconButton>
-        <IconButton color={"inherit"}>
+        <IconButton color={"inherit"} href={"https://github.com/you-genie/GatsMe"}>
           <CodeIcon />
         </IconButton>
-        <IconButton color={"inherit"}>
+        <IconButton color={"inherit"} href={"/"}>
           <PersonIcon />
         </IconButton>
-        <IconButton color={"inherit"}>
+        <IconButton color={"inherit"} href={myNotionPage}>
           <LibraryBooksIcon />
         </IconButton>
       </Toolbar>
